@@ -10,7 +10,8 @@ VALUES ('Angela', 'Popa', '57', 'F', '0772456783', '1100', '00001', 'Heart Attac
         ('Bogdan', 'Lascu', '29', 'M', '0712557908', '1400', '00004', 'Hypothermia', '01/01/2024', '01/18/2024'),
         ('Andreea', 'Nicolaescu', '33', 'F', '0726880916', '1401', '00004', 'Sudden cardiac arrest', '01/05/2024', '02/02/2024' ),
         ('Martina', 'Lopez', '20', 'F', '0712907689', '1100', '00001', 'Trauma from road accident', '02/15/2024', '03/29/2024'),
-        ('Anthony', 'Scarllet', '55', 'M', '0712678904', '1100', '00001', 'Allergic reaction', '03/10/2024', '04/01/2024');
+        ('Anthony', 'Scarllet', '55', 'M', '0712678904', '1100', '00001', 'Allergic reaction', '03/10/2024', '04/01/2024'),
+        ('Karla', 'Lombert', '45', 'F', '0714578950', '1100', '00001', 'Fever', '03/20/2024', '03/22/2024');
 
 INSERT INTO doctors (first_name, last_name, phone_number, gender, age, patients_id, wards_id, doctors_seniority_id) 
 VALUES ('Cristian', 'Andreescu', '0761289027', 'M', '45', '010', '00001', 'Attending Physician'),
@@ -22,7 +23,8 @@ VALUES ('Cristian', 'Andreescu', '0761289027', 'M', '45', '010', '00001', 'Atten
        ('Camil', 'Stoicescu', '0719056781', 'M', '63','030', '00003', 'Medical Director'),
        ('Camil', 'Stoicescu', '0719056781', 'M', '63','031', '00003', 'Medical Director'),
        ('Natacha', 'Cristescu', '0723245670', 'F', '35', '040', '00004', 'Fellow'),
-       ('Amelia', 'Sorescu', '0720678230', 'F', '55', '041', '00004', 'Attending Physician');
+       ('Amelia', 'Sorescu', '0720678230', 'F', '55', '041', '00004', 'Attending Physician'),
+       ('Alexa','Ghenc', '0734567891', 'M', '50', '041', '00004', 'Resident');
 
 
 INSERT INTO hospital_wards (wards_name)
@@ -52,7 +54,8 @@ VALUES ('Adela', 'Colcea', '0712678904', 'F', '42', '00001', 'Practical Nurse'),
        ('Ionel', 'Damsa', '0726547892', 'M', '53', '00003' 'Practical Nurse'),
        ('Ariana', 'Fando', '0789027866', 'F', '60', '00004', 'Practical Nurse'),
        ('Dariana', 'Tanes', '0719070821', 'F', '50', '00004', 'Practical Nurse'),
-       ('Paul', 'Dancu', '0707852941', 'M', '30', '00004', 'Registered Nurse');
+       ('Paul', 'Dancu', '0707852941', 'M', '30', '00004', 'Registered Nurse'),
+       ('Natalia', 'Anghelescu', '0770456789', 'F', '39', '00004', 'Registered Nurse');
 
 INSERT INTO stretcher_bearers (first_name, last_name, gender, age, phone_number, wards_id)
 VALUES ('Angel', 'Cristoiu', 'M', '29', '0723897657', '00001'),
@@ -64,7 +67,8 @@ VALUES ('Angel', 'Cristoiu', 'M', '29', '0723897657', '00001'),
        ('Claudiu', 'Damaschin', 'M', '56', '0726458902', '00003'),
        ('Robert', 'Petrescu', 'M', '46', '0723489515', '00003'),
        ('Clara', 'Aposta', 'F', '63', '0726458902', '00004'),
-       ('Diana', 'Lenu', 'F', '41', '0753118790', '00004');
+       ('Diana', 'Lenu', 'F', '41', '0753118790', '00004'),
+       ('Claudia', 'Constantin', 'F', '25', '0780326784', '00004');
 
 INSERT INTO doctors_rating_patients (patients_id, raiting, doctors_id)
 VALUES ('010', '10', '1100'),
@@ -129,7 +133,8 @@ VALUES ('10000', '00001', '01/08/2024 08:00:00'),
        ('30000', '00003', '03/18/2024 08:00:00'),
        ('30001', '00003', '03/18/2024 20:00:00'),
        ('40000', '00004', '03/28/2024 08:00:00'),
-       ('40001', '00004', '03/28/2024 20:00:00');
+       ('40001', '00004', '03/28/2024 20:00:00'),
+       ('40001', '00004', '03/15/2024 24:00:00');
 
 INSERT INTO cleaners (first_name, last_name, phone_number, gender, age, wards_id)
 VALUES ('Claudia', 'Pasca', '0712456783', 'F', '45', '00001'),
@@ -139,7 +144,8 @@ VALUES ('Claudia', 'Pasca', '0712456783', 'F', '45', '00001'),
        ('Simina', 'Stan', '0712567754', 'F', ' 29', '00003'),
        ('Liviu', 'Roman', '0723654980', 'M', '59', '00003'),
        ('Diana', 'Ginc', '0726547893', 'F', '63', '00004'),
-       ('Luciana', 'Tutcan', '0714527649', 'F', '50', '00004');
+       ('Luciana', 'Tutcan', '0714527649', 'F', '50', '00004'),
+       ('Erick', 'Elliot', '0789563271', 'M', '49', '00004');
 
 INSERT INTO evidence_of_disinfection (disinfection_checking)
 VALUES ('Correct'),
