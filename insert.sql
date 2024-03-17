@@ -14,17 +14,17 @@ VALUES ('Angela', 'Popa', '57', 'F', '0772456783', '1100', '00001', 'Heart Attac
         ('Karla', 'Lombert', '45', 'F', '0714578950', '1100', '00001', 'Fever', '03/20/2024', '03/22/2024');
 
 INSERT INTO doctors (first_name, last_name, phone_number, gender, age, patients_id, wards_id, doctors_seniority_id) 
-VALUES ('Cristian', 'Andreescu', '0761289027', 'M', '45', '010', '00001', 'Attending Physician'),
-       ('Cristian', 'Andreescu', '0761289027', 'M', '45', '012', '00001', 'Attending Physician'),
-       ('Cristian', 'Andreescu', '0761289027', 'M', '45', '013', '00001', 'Attending Physician'),
-       ('Alin', 'Dinulescu', '0788904537', 'M', '27', '011', '00001', ' Resident'),
-       ('Silviu', 'Galin', '0716782390', 'M','60', '020', '00002' 'Department Head'),
-       ('Silviu', 'Galin', '0716782390', 'M','60', '021', '00002' 'Department Head'),
-       ('Camil', 'Stoicescu', '0719056781', 'M', '63','030', '00003', 'Medical Director'),
-       ('Camil', 'Stoicescu', '0719056781', 'M', '63','031', '00003', 'Medical Director'),
-       ('Natacha', 'Cristescu', '0723245670', 'F', '35', '040', '00004', 'Fellow'),
-       ('Amelia', 'Sorescu', '0720678230', 'F', '55', '041', '00004', 'Attending Physician'),
-       ('Alexa','Ghenc', '0734567891', 'M', '50', '041', '00004', 'Resident');
+VALUES ('Cristian', 'Andreescu', '0761289027', 'M', '45', '010', '00001', '3'),
+       ('Cristian', 'Andreescu', '0761289027', 'M', '45', '012', '00001', '3'),
+       ('Cristian', 'Andreescu', '0761289027', 'M', '45', '013', '00001', '3'),
+       ('Alin', 'Dinulescu', '0788904537', 'M', '27', '011', '00001', '1'),
+       ('Silviu', 'Galin', '0716782390', 'M','60', '020', '00002' '4'),
+       ('Silviu', 'Galin', '0716782390', 'M','60', '021', '00002' '4'),
+       ('Camil', 'Stoicescu', '0719056781', 'M', '63','030', '00003', '5'),
+       ('Camil', 'Stoicescu', '0719056781', 'M', '63','031', '00003', '5'),
+       ('Natacha', 'Cristescu', '0723245670', 'F', '35', '040', '00004', '2'),
+       ('Amelia', 'Sorescu', '0720678230', 'F', '55', '041', '00004', '3'),
+       ('Alexa','Ghenc', '0734567891', 'M', '50', '041', '00004', '1');
 
 
 INSERT INTO hospital_wards (wards_name)
@@ -45,17 +45,17 @@ VALUES ('Registered Nurse'),
         ('Practical Nurse'),
 
 INSERT INTO nurses (first_name, last_name, phone_number, gender, age, wards_id, nurses_seniority_id)
-VALUES ('Adela', 'Colcea', '0712678904', 'F', '42', '00001', 'Practical Nurse'),
-       ('Simona', 'Patcu', '0728906789', 'F', '48', '00001', 'Practical Nurse'),
-       ('Lucian', 'Gatcu', '0729906329', 'M', '24', '00001', 'Registered Nurse'),
-       ('Carmina', 'Belc', '0738996735', 'F', '39', '00002', 'Registered Nurse'),
-       ('Darian', 'Paulescu', '0725679074', 'M', '55', '00002', 'Registered Nurse'),
-       ('Cosmin', 'Grusc', '0745678901', 'M', '25', '00003', 'Registered Nurse'),
-       ('Ionel', 'Damsa', '0726547892', 'M', '53', '00003' 'Practical Nurse'),
-       ('Ariana', 'Fando', '0789027866', 'F', '60', '00004', 'Practical Nurse'),
-       ('Dariana', 'Tanes', '0719070821', 'F', '50', '00004', 'Practical Nurse'),
-       ('Paul', 'Dancu', '0707852941', 'M', '30', '00004', 'Registered Nurse'),
-       ('Natalia', 'Anghelescu', '0770456789', 'F', '39', '00004', 'Registered Nurse');
+VALUES ('Adela', 'Colcea', '0712678904', 'F', '42', '00001', '2'),
+       ('Simona', 'Patcu', '0728906789', 'F', '48', '00001', '2'),
+       ('Lucian', 'Gatcu', '0729906329', 'M', '24', '00001', '1'),
+       ('Carmina', 'Belc', '0738996735', 'F', '39', '00002', '1'),
+       ('Darian', 'Paulescu', '0725679074', 'M', '55', '00002', '1'),
+       ('Cosmin', 'Grusc', '0745678901', 'M', '25', '00003', '1'),
+       ('Ionel', 'Damsa', '0726547892', 'M', '53', '00003' '2'),
+       ('Ariana', 'Fando', '0789027866', 'F', '60', '00004', '2'),
+       ('Dariana', 'Tanes', '0719070821', 'F', '50', '00004', '2'),
+       ('Paul', 'Dancu', '0707852941', 'M', '30', '00004', '1'),
+       ('Natalia', 'Anghelescu', '0770456789', 'F', '39', '00004', '1');
 
 INSERT INTO stretcher_bearers (first_name, last_name, gender, age, phone_number, wards_id)
 VALUES ('Angel', 'Cristoiu', 'M', '29', '0723897657', '00001'),

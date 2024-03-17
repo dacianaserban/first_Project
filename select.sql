@@ -298,7 +298,7 @@ ORDER BY last_name DESC;
 SELECT first_name, last_name, age, wards_id
 WHERE gender LIKE 'F' AND (age BETWEEN 26 AND 66)
 GROUP BY wards_id
-ORDER BY age;s
+ORDER BY age;
 
 
 

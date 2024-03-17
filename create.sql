@@ -99,7 +99,9 @@ CREATE TABLE IF NOT EXISTS cleaners(
 
 CREATE TABLE patients_of_doctors AS
 SELECT id AS doctors_id, id AS patients_ID
-FROM doctors, patients
+FROM doctors
+INNER JOIN patients
+ON doctors.wards_id = patients.wards_id
 GROUP BY doctors_id;
 
 CREATE TABLE doctors_raiting AS
