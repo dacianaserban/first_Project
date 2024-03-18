@@ -227,26 +227,26 @@ ORDER BY raiting DESC;
 SELECT * FROM employees;
 
 SELECT * FROM employees
-WHERE compensation NOT LIKE '1';
+WHERE increase NOT LIKE '1';
 
 SELECT doctors_id 
 FROM employees
-WHERE compensation = '1';
+WHERE increase = '1';
 ORDER BY doctors_id DESC;
 
 SELECT nurses_id 
 FROM employees
-WHERE compensation = '1';
+WHERE increase = '1';
 ORDER BY nurses_id DESC;
 
 SELECT stretcher_bearers_id 
 FROM employees
-WHERE compensation = '1';
+WHERE increase = '1';
 ORDER BY stretcher_bearers DESC;
 
 SELECT cleaners_id 
 FROM employees
-WHERE compensation = '1';
+WHERE increase = '1';
 ORDER BY cleaners_id DESC;
 
 

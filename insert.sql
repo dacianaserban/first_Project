@@ -80,7 +80,7 @@ VALUES ('010', '10', '1100'),
         ('040', '9','1400'),
         ('041', '10','1401');
 
-INSERT INTO employees (doctors_id, compensation)
+INSERT INTO employees (doctors_id, increase)
 VALUES ('1100', '1'),
        ('1101', '0'),
        ('1201', '0'),
@@ -88,7 +88,7 @@ VALUES ('1100', '1'),
        ('1400', '1'),
        ('1401', '1');
 
-INSERT INTO employess (nurses_id, compensation)
+INSERT INTO employess (nurses_id, increase)
 VALUES ('10', '0'),
        ('11', '0'),
        ('12', '1'),
@@ -102,7 +102,7 @@ VALUES ('10', '0'),
 
 
 
- INSERT INTO employees (stretcher_bearers_id, compensation)
+ INSERT INTO employees (stretcher_bearers_id, increase)
  VALUES ('1000', '1'),
         ('1001', '0'),
         ('1002', '1'),
@@ -114,7 +114,7 @@ VALUES ('10', '0'),
         ('4000', '1'),
         ('4001', '0');
  
- INSERT INTO employees (cleaners_id, compensation)
+ INSERT INTO employees (cleaners_id, increase)
  VALUES ('10000', '1'),
         ('10001', '0'),
         ('20000', '1'),

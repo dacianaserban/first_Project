@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS employees(
     nurses_id integer FOREIGN KEY REFERENCES nurses(id),
     stretcher_bearers_id integer FOREIGN KEY REFERENCES stretcher_bearers(id),
     cleaners_id integer FOREIGN KEY REFERENCES cleaners(id),
-    compensation boolean CHECK (compensation = 1 OR compensation = 0)
+    increase boolean CHECK (increase = 1 OR increase = 0)
 );
 
 CREATE TABLE IF NOT EXISTS disinfection_of_hospital_wards(
@@ -115,25 +115,25 @@ SELECT wards_id AS wards, date_of_disinfection
 FROM disinfection_of_hospital_wards
 ORDER BY date_of_disinfection DESC;
 
-CREATE TABLE doctors_compensations AS
-SELECT doctors_id,  compensation
+CREATE TABLE doctors_increases AS
+SELECT doctors_id, increase
 FROM employees
-ORDER BY compensation DESC;
+ORDER BY increase DESC;
 
-CREATE TABLE nurses_compensations AS
-SELECT nurses_id, compensation
+CREATE TABLE nurses_increases AS
+SELECT nurses_id, increase
 FROM employees
-ORDER BY compensation DESC;
+ORDER BY increase DESC;
 
-CREATE TABLE stretcher_bearers_compensations AS
-SELECT stretcher_bearers_id, compensation
+CREATE TABLE stretcher_bearers_increases AS
+SELECT stretcher_bearers_id, increase
 FROM employees
-ORDER BY compensation DESC;
+ORDER BY increase DESC;
 
 CREATE TABLE cleaners_compensations AS
-SELECT cleaners_id, compensation
+SELECT cleaners_id, increase
 FROM employees
-ORDER BY compensation DESC;
+ORDER BY increase DESC;
 
 ALTER TABLE evidence_of_disinfection
 ADD disinfection_checking varchar(10) CHECK (disinfection_checking = "Correct" OR disinfection_checking = "Wrong" OR disinfection_checking = NULL);
