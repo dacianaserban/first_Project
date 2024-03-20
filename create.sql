@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS patients(
     doctors_id integer FOREIGN KEY REFERENCES doctors(id),
     wards_id integer FOREIGN KEY REFERENCES hospital_wards(id),
     diagnostic varchar(60) NOT NULL,
-    date_of_admission NOT NULL,
+    date_of_admission date NOT NULL,
     date_of_discharge date
 );
 
